@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Portal - Notices</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="min-h-screen bg-gray-50">
+        <!-- Header -->
+        <header class="bg-white shadow-sm border-b">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <div class="flex items-center">
+                        <div class="bg-blue-600 p-2 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-white"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><polyline points="10 10 13 7 16 10"/><path d="M13 7v10"/></svg>
+                        </div>
+                        <h1 class="ml-3 text-xl font-semibold text-gray-900">School Portal</h1>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-gray-500"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            <span class="text-sm font-medium text-gray-700">
+                                Alice Johnson
+                            </span>
+                            <span class="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800">student</span>
+                        </div>
+                        <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 px-3 py-2" onclick="alert(\'Logout clicked!\')">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 mr-2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="17 17 22 12 17 7"/><line x1="22" x2="10" y1="12" y2="12"/></svg>
+                            Logout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold text-gray-900">School Notices</h2>
+                <p class="text-gray-600 mt-2">Stay updated with the latest announcements and important information.</p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- High Priority Notice -->
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm border-red-200 bg-red-50">
+                    <div class="flex flex-col space-y-1.5 p-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-xl font-semibold leading-none tracking-tight text-red-900">Upcoming exam on 7/20</h3>
+                            <span class="inline-flex items-center rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-medium text-red-800">High Priority</span>
+                        </div>
+                        <p class="text-sm text-red-700">Math 101 • Published on 7/15/2025</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <p class="text-red-800">
+                            Dear students, please be reminded that the Math 101 midterm examination is scheduled for July 20th, 2025. 
+                            The exam will cover chapters 1-5 of your textbook. Please ensure you have your student ID and calculator ready. 
+                            The exam will be held in Room 201 from 9:00 AM to 11:00 AM.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Medium Priority Notice -->
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm border-yellow-200 bg-yellow-50">
+                    <div class="flex flex-col space-y-1.5 p-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-xl font-semibold leading-none tracking-tight text-yellow-900">School closed on 7/25</h3>
+                            <span class="inline-flex items-center rounded-full bg-yellow-100 px-2.5 py-0.5 text-xs font-medium text-yellow-800">Medium Priority</span>
+                        </div>
+                        <p class="text-sm text-yellow-700">General • Published on 7/10/2025</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <p class="text-yellow-800">
+                            The school will be closed on July 25th, 2025 for staff development day. 
+                            All classes and activities are cancelled for this day. Regular schedule will resume on July 26th.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Normal Priority Notice -->
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                    <div class="flex flex-col space-y-1.5 p-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-xl font-semibold leading-none tracking-tight text-gray-900">School play tickets on sale</h3>
+                            <span class="inline-flex items-center rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800">Normal</span>
+                        </div>
+                        <p class="text-sm text-gray-600">General • Published on 7/18/2025</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <p class="text-gray-700">
+                            Tickets for the annual school play "Romeo and Juliet" are now on sale at the main office. 
+                            Performances will be held on August 15th and 16th at 7:00 PM in the school auditorium. 
+                            Tickets are $10 for adults and $5 for students.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Another Normal Priority Notice -->
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                    <div class="flex flex-col space-y-1.5 p-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-xl font-semibold leading-none tracking-tight text-gray-900">Library hours extended</h3>
+                            <span class="inline-flex items-center rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800">Normal</span>
+                        </div>
+                        <p class="text-sm text-gray-600">Library • Published on 7/05/2025</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <p class="text-gray-700">
+                            Starting July 8th, the library will extend its hours during exam period. 
+                            New hours: Monday-Friday 7:00 AM - 8:00 PM, Saturday 9:00 AM - 6:00 PM. 
+                            Sunday hours remain unchanged (Closed).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Low Priority Notice -->
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm border-gray-200 bg-gray-50">
+                    <div class="flex flex-col space-y-1.5 p-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-xl font-semibold leading-none tracking-tight text-gray-700">Cafeteria menu update</h3>
+                            <span class="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-600">Low Priority</span>
+                        </div>
+                        <p class="text-sm text-gray-500">Cafeteria • Published on 7/01/2025</p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <p class="text-gray-600">
+                            The cafeteria has updated its menu for the summer session. 
+                            New healthy options including fresh salads and fruit bowls are now available. 
+                            Check the cafeteria board for daily specials.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+

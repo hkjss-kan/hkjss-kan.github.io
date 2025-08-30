@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Portal - Library Books</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="min-h-screen bg-gray-50">
+        <!-- Header -->
+        <header class="bg-white shadow-sm border-b">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <div class="flex items-center">
+                        <div class="bg-blue-600 p-2 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-white"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><polyline points="10 10 13 7 16 10"/><path d="M13 7v10"/></svg>
+                        </div>
+                        <h1 class="ml-3 text-xl font-semibold text-gray-900">School Portal</h1>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-gray-500"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            <span class="text-sm font-medium text-gray-700">
+                                Alice Johnson
+                            </span>
+                            <span class="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800">student</span>
+                        </div>
+                        <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 px-3 py-2" onclick="alert(\'Logout clicked!\')">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 mr-2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="17 17 22 12 17 7"/><line x1="22" x2="10" y1="12" y2="12"/></svg>
+                            Logout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold text-gray-900">Library Books</h2>
+                <p class="text-gray-600 mt-2">Browse and manage your borrowed books.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Available Books -->
+                <div class="lg:col-span-2">
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                        <div class="flex flex-col space-y-1.5 p-6">
+                            <h3 class="text-2xl font-semibold leading-none tracking-tight flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 mr-2 text-green-600"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><polyline points="10 10 13 7 16 10"/><path d="M13 7v10"/></svg>
+                                Available Books
+                            </h3>
+                            <p class="text-sm text-muted-foreground">Books available for borrowing</p>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <div class="space-y-4">
+                                <div class="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
+                                    <div class="flex justify-between items-start">
+                                        <div>
+                                            <h4 class="font-semibold text-gray-900">To Kill a Mockingbird</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Harper Lee</p>
+                                            <p class="text-xs text-gray-500 mt-1">ISBN: 978-0-06-112008-4</p>
+                                        </div>
+                                        <div class="text-right">
+                                            <span class="inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800">Available</span>
+                                            <p class="text-xs text-gray-500 mt-1">3 copies</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
+                                    <div class="flex justify-between items-start">
+                                        <div>
+                                            <h4 class="font-semibold text-gray-900">Pride and Prejudice</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Jane Austen</p>
+                                            <p class="text-xs text-gray-500 mt-1">ISBN: 978-0-14-143951-8</p>
+                                        </div>
+                                        <div class="text-right">
+                                            <span class="inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800">Available</span>
+                                            <p class="text-xs text-gray-500 mt-1">2 copies</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
+                                    <div class="flex justify-between items-start">
+                                        <div>
+                                            <h4 class="font-semibold text-gray-900">Lord of the Flies</h4>
+                                            <p class="text-sm text-gray-600 mt-1">William Golding</p>
+                                            <p class="text-xs text-gray-500 mt-1">ISBN: 978-0-571-05686-2</p>
+                                        </div>
+                                        <div class="text-right">
+                                            <span class="inline-flex items-center rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-medium text-red-800">Unavailable</span>
+                                            <p class="text-xs text-gray-500 mt-1">0 copies</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Borrowed Books -->
+                <div class="space-y-6">
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                        <div class="flex flex-col space-y-1.5 p-6">
+                            <h3 class="text-2xl font-semibold leading-none tracking-tight flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 mr-2 text-blue-600"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><polyline points="10 10 13 7 16 10"/><path d="M13 7v10"/></svg>
+                                My Borrowed Books
+                            </h3>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <div class="space-y-3">
+                                <div class="border rounded-lg p-3">
+                                    <h4 class="font-medium text-sm text-gray-900">The Great Gatsby</h4>
+                                    <p class="text-xs text-gray-600 mt-1">F. Scott Fitzgerald</p>
+                                    <div class="flex items-center justify-between mt-2">
+                                        <div class="flex items-center text-xs text-gray-500">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3 w-3 mr-1"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                            Due: 7/28/2025
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border rounded-lg p-3">
+                                    <h4 class="font-medium text-sm text-gray-900">1984</h4>
+                                    <p class="text-xs text-gray-600 mt-1">George Orwell</p>
+                                    <div class="flex items-center justify-between mt-2">
+                                        <div class="flex items-center text-xs text-gray-500">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3 w-3 mr-1"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                            Due: 8/10/2025
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Library Hours -->
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                        <div class="flex flex-col space-y-1.5 p-6">
+                            <h3 class="text-2xl font-semibold leading-none tracking-tight flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 mr-2 text-purple-600"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                Library Hours
+                            </h3>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Monday - Friday</span>
+                                    <span class="text-gray-900">8:00 AM - 6:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Saturday</span>
+                                    <span class="text-gray-900">9:00 AM - 4:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Sunday</span>
+                                    <span class="text-gray-900">Closed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+

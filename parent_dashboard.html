@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Portal - Parent Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="min-h-screen bg-gray-50">
+        <!-- Header -->
+        <header class="bg-white shadow-sm border-b">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <div class="flex items-center">
+                        <div class="bg-purple-600 p-2 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-white"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><polyline points="10 10 13 7 16 10"/><path d="M13 7v10"/></svg>
+                        </div>
+                        <h1 class="ml-3 text-xl font-semibold text-gray-900">Parent Portal</h1>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-gray-500"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            <span class="text-sm font-medium text-gray-700">
+                                Carol Davis
+                            </span>
+                            <span class="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800">parent</span>
+                        </div>
+                        <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 px-3 py-2" onclick="alert(\'Logout clicked!\')">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 mr-2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="17 17 22 12 17 7"/><line x1="22" x2="10" y1="12" y2="12"/></svg>
+                            Logout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <!-- Welcome Section -->
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold text-gray-900">
+                    Welcome, Carol!
+                </h2>
+                <p class="text-gray-600 mt-2">Stay updated on your child's academic progress and school activities.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Children's Information -->
+                <div class="lg:col-span-2">
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                        <div class="flex flex-col space-y-1.5 p-6">
+                            <h3 class="text-2xl font-semibold leading-none tracking-tight flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 mr-2 text-purple-600"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                My Children
+                            </h3>
+                            <p class="text-sm text-muted-foreground">Academic information for your children</p>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <div class="space-y-4">
+                                <div class="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
+                                    <div class="flex justify-between items-start">
+                                        <div>
+                                            <h4 class="font-semibold text-gray-900">Alice Johnson</h4>
+                                            <p class="text-sm text-gray-600 mt-1">Student ID: S001</p>
+                                            <p class="text-sm text-gray-600">Grade: 10th</p>
+                                            <div class="mt-3">
+                                                <h5 class="text-sm font-medium text-gray-700">Current Classes:</h5>
+                                                <ul class="text-sm text-gray-600 mt-1 space-y-1">
+                                                    <li>• Math 101 - Introduction to Calculus</li>
+                                                    <li>• Physics 201 - Classical Mechanics</li>
+                                                    <li>• English Literature - Victorian Era Poetry</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <span class="inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800">Active</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="space-y-6">
+                    <!-- Recent Notices -->
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                        <div class="flex flex-col space-y-1.5 p-6">
+                            <h3 class="text-2xl font-semibold leading-none tracking-tight flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 mr-2 text-orange-600"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+                                School Notices
+                            </h3>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <div class="space-y-3">
+                                <div class="border-l-4 border-blue-500 pl-3">
+                                    <h4 class="font-medium text-sm text-gray-900">School play tickets on sale</h4>
+                                    <p class="text-xs text-gray-600 mt-1">General</p>
+                                    <p class="text-xs text-gray-500 mt-1">
+                                        7/18/2025
+                                    </p>
+                                </div>
+                                <div class="border-l-4 border-red-500 pl-3">
+                                    <h4 class="font-medium text-sm text-gray-900">Parent-teacher conferences</h4>
+                                    <p class="text-xs text-gray-600 mt-1">Important</p>
+                                    <p class="text-xs text-gray-500 mt-1">
+                                        7/12/2025
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Forms Due -->
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                        <div class="flex flex-col space-y-1.5 p-6">
+                            <h3 class="text-2xl font-semibold leading-none tracking-tight flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 mr-2 text-red-600"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                                Forms Due
+                            </h3>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <div class="space-y-3">
+                                <div class="border rounded-lg p-3 bg-yellow-50">
+                                    <h4 class="font-medium text-sm text-gray-900">Permission slip for field trip</h4>
+                                    <div class="flex items-center justify-between mt-2">
+                                        <div class="flex items-center text-xs text-gray-500">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3 w-3 mr-1"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                            Due: 7/30/2025
+                                        </div>
+                                        <span class="inline-flex items-center rounded-full bg-yellow-100 px-2.5 py-0.5 text-xs font-medium text-yellow-800">Pending</span>
+                                    </div>
+                                </div>
+                                <div class="border rounded-lg p-3 bg-red-50">
+                                    <h4 class="font-medium text-sm text-gray-900">Medical information update</h4>
+                                    <div class="flex items-center justify-between mt-2">
+                                        <div class="flex items-center text-xs text-gray-500">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3 w-3 mr-1"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                            Due: 7/25/2025
+                                        </div>
+                                        <span class="inline-flex items-center rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-medium text-red-800">Overdue</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+
